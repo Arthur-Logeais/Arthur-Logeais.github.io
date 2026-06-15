@@ -1,11 +1,11 @@
 # Arthur Logeais <small>Portfolio BTS SIO</small>
 
-> Étudiant BTS SIO option SISR — Spécialisation Cybersécurité Offensive
+> 🛡️ Étudiant en cybersécurité offensive — Objectif Red Team Operator
 
-- 🎓 BTS SIO 1ère année — Promotion 2025-2027
-- 🛡️ Passionné de cybersécurité offensive
+- 🎓 BTS SIO option SISR — Promotion 2025-2027
 - 📚 30+ chapitres de documentation technique
-- 🎯 Objectif : CPTS, OSCP+, CRTO, OSCE3, OSEE
+- 🎯 Roadmap : CPTS → OSCP+ → CRTO → OSCE3 → OSEE
+- 💼 Recherche stage 2ème année en cybersécurité offensive
 
-[Commencer la visite](/)
-[GitHub](https://github.com/Arthur-Logeais)
+[🚀 Découvrir le portfolio](/)
+[🐙 GitHub](https://github.com/Arthur-Logeais)
