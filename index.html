@@ -17,13 +17,43 @@
       --theme-color: #e63946;
     }
     
+    /* ============================
+       FOND GLOBAL HARMONISÉ
+    ============================ */
     body { 
-      font-family: 'Segoe UI', sans-serif; 
+      font-family: 'Segoe UI', sans-serif;
+      background: #0d0d18 !important;
+    }
+
+    .content {
+      background: #0d0d18 !important;
+    }
+
+    .app-nav {
+      background: #0a0a0f !important;
+    }
+
+    .app-nav a {
+      color: #c0c0c0 !important;
+    }
+
+    .app-nav a:hover,
+    .app-nav a.active {
+      color: #e63946 !important;
+    }
+
+    .sidebar-toggle {
+      background: #0a0a0f !important;
+    }
+
+    .sidebar-toggle span {
+      background-color: #e63946 !important;
     }
     
     /* === SIDEBAR === */
     .sidebar { 
-      background: #0a0a0f; 
+      background: #0a0a0f !important;
+      border-right: 1px solid #1a1a2e !important;
     }
     
     .sidebar > h1 .app-name-link {
@@ -47,7 +77,8 @@
     
     /* === CONTENU PRINCIPAL === */
     .markdown-section { 
-      max-width: 1100px; 
+      max-width: 1100px;
+      background: #0d0d18 !important;
     }
     
     /* === TEXTE GÉNÉRAL === */
@@ -326,7 +357,7 @@
     }
     
     ::-webkit-scrollbar-track {
-      background: #0a0a0f;
+      background: #0d0d18;
     }
     
     ::-webkit-scrollbar-thumb {
@@ -394,7 +425,7 @@
   <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
   
-  <!-- Coloration syntaxique pour le code technique -->
+  <!-- Coloration syntaxique -->
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-powershell.min.js"></script>
