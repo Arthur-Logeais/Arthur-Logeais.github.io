@@ -18,19 +18,31 @@
     }
     
     /* ============================
-       FOND GLOBAL HARMONISÉ
+       FOND GLOBAL HARMONISÉ - FIX
     ============================ */
-    body { 
+    html, body { 
       font-family: 'Segoe UI', sans-serif;
       background: #0d0d18 !important;
+      background-color: #0d0d18 !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      min-height: 100vh !important;
     }
 
-    .content {
+    /* Force le fond sur tous les conteneurs principaux */
+    #app,
+    main,
+    .content,
+    section.cover,
+    section.cover.show {
       background: #0d0d18 !important;
+      background-color: #0d0d18 !important;
     }
 
+    /* Navbar du haut */
     .app-nav {
-      background: #0a0a0f !important;
+      background: #0d0d18 !important;
+      background-color: #0d0d18 !important;
     }
 
     .app-nav a {
@@ -79,6 +91,7 @@
     .markdown-section { 
       max-width: 1100px;
       background: #0d0d18 !important;
+      background-color: #0d0d18 !important;
     }
     
     /* === TEXTE GÉNÉRAL === */
@@ -425,7 +438,7 @@
   <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
   
-  <!-- Coloration syntaxique -->
+  <!-- Coloration syntaxique pour le code technique -->
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-powershell.min.js"></script>
