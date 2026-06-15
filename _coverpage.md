@@ -7,6 +7,6 @@
 - 📚 30+ chapitres de documentation technique
 - 🎯 Objectif : CPTS, OSCP+, CRTO, OSCE3, OSEE
 
-[👤 À propos](#/about/)
-[📋 Procédures](#/procedures/)
+[👤 À propos](about/)
+[📋 Procédures](procedures/)
 [🐙 GitHub](https://github.com/Arthur-Logeais)
