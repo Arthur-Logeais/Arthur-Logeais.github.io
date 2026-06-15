@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio Arthur Logeais | BTS SIO</title>
+  <meta name="description" content="Portfolio BTS SIO - Cybersécurité Offensive">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Theme Docsify sombre -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/dark.css">
+  
+  <!-- Coloration syntaxique -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1/themes/prism-tomorrow.css">
+  
+  <style>
+    :root {
+      --theme-color: #e63946;
+    }
+    
+    body { 
+      font-family: 'Segoe UI', sans-serif; 
+    }
+    
+    /* === SIDEBAR === */
+    .sidebar { 
+      background: #0a0a0f; 
+    }
+    
+    .sidebar > h1 .app-name-link {
+      color: #e63946 !important;
+      font-weight: 900;
+    }
+    
+    .sidebar ul li a {
+      color: #c0c0c0 !important;
+    }
+    
+    .sidebar ul li a:hover,
+    .sidebar ul li a.active {
+      color: #e63946 !important;
+    }
+    
+    .sidebar ul li.active > a {
+      color: #e63946 !important;
+      font-weight: 700;
+    }
+    
+    /* === CONTENU PRINCIPAL === */
+    .markdown-section { 
+      max-width: 1100px; 
+    }
+    
+    /* === TEXTE GÉNÉRAL === */
+    .markdown-section p,
+    .markdown-section li,
+    .markdown-section td,
+    .markdown-section span {
+      color: #d0d0d0 !important;
+    }
+    
+    .markdown-section strong {
+      color: #ffffff !important;
+    }
+    
+    /* === TITRES === */
+    .markdown-section h1 {
+      color: #ffffff !important;
+      border-bottom: 2px solid #e63946 !important;
+      padding-bottom: 10px;
+      margin-top: 2rem;
+    }
+    
+    .markdown-section h2 {
+      color: #ff6b6b !important;
+      border-bottom: 1px solid #333 !important;
+      padding-bottom: 8px;
+      margin-top: 1.8rem;
+    }
+    
+    .markdown-section h3 {
+      color: #ff9090 !important;
+      margin-top: 1.5rem;
+    }
+    
+    .markdown-section h4 {
+      color: #e0e0e0 !important;
+      margin-top: 1.2rem;
+    }
+    
+    /* === TABLEAUX === */
+    .markdown-section table {
+      border: 1px solid #444 !important;
+      border-collapse: collapse !important;
+      width: 100% !important;
+      margin: 1rem 0 !important;
+    }
+    
+    .markdown-section th {
+      background: #1e1e35 !important;
+      color: #ffffff !important;
+      font-weight: 700 !important;
+      border: 1px solid #444 !important;
+      padding: 12px 14px !important;
+      text-align: left !important;
+    }
+    
+    .markdown-section td {
+      background: #151520 !important;
+      color: #e0e0e0 !important;
+      border: 1px solid #333 !important;
+      padding: 10px 14px !important;
+    }
+    
+    .markdown-section tr:nth-child(even) td {
+      background: #1a1a2a !important;
+    }
+    
+    .markdown-section tr:hover td {
+      background: #252540 !important;
+    }
+    
+    /* === LIENS === */
+    .markdown-section a {
+      color: #4fc3f7 !important;
+      text-decoration: none !important;
+      border-bottom: 1px dotted #4fc3f7;
+      transition: all 0.2s;
+    }
+    
+    .markdown-section a:hover {
+      color: #81d4fa !important;
+      border-bottom: 1px solid #81d4fa;
+    }
+    
+    /* === CODE INLINE === */
+    .markdown-section code {
+      background: #1a1a30 !important;
+      color: #00ff41 !important;
+      padding: 2px 8px !important;
+      border-radius: 4px !important;
+      font-family: 'JetBrains Mono', 'Courier New', monospace !important;
+      font-size: 0.88em !important;
+      border: 1px solid #2a2a45;
+    }
+    
+    /* === BLOCS DE CODE === */
+    .markdown-section pre {
+      background: #0a0a15 !important;
+      border: 1px solid #2a2a45 !important;
+      border-radius: 8px !important;
+      margin: 1rem 0 !important;
+    }
+    
+    .markdown-section pre > code {
+      background: transparent !important;
+      color: #e0e0e0 !important;
+      border: none !important;
+      font-size: 0.85em !important;
+      line-height: 1.7 !important;
+    }
+    
+    /* === BLOCKQUOTES === */
+    .markdown-section blockquote {
+      background: #1a1a2a !important;
+      border-left: 4px solid #ffd600 !important;
+      color: #e0e0e0 !important;
+      padding: 14px 18px !important;
+      border-radius: 4px !important;
+      margin: 1rem 0 !important;
+    }
+    
+    .markdown-section blockquote p {
+      color: #e0e0e0 !important;
+    }
+    
+    .markdown-section blockquote strong {
+      color: #ffd600 !important;
+    }
+    
+    /* === LISTES === */
+    .markdown-section ul li,
+    .markdown-section ol li {
+      color: #d0d0d0 !important;
+      margin: 5px 0;
+      line-height: 1.7;
+    }
+    
+    .markdown-section ul li strong,
+    .markdown-section ol li strong {
+      color: #ffffff !important;
+    }
+    
+    /* === TEXTE ITALIQUE / SECONDAIRE === */
+    .markdown-section em,
+    .markdown-section i {
+      color: #b8b8c0 !important;
+      font-style: italic;
+    }
+    
+    /* === LIGNES HORIZONTALES === */
+    .markdown-section hr {
+      border: none !important;
+      border-top: 1px solid #444 !important;
+      margin: 2rem 0 !important;
+    }
+    
+    /* === COVER PAGE === */
+    section.cover {
+      background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%) !important;
+    }
+    
+    section.cover h1 {
+      color: #ffffff !important;
+    }
+    
+    section.cover h1 a {
+      color: #e63946 !important;
+    }
+    
+    section.cover p {
+      color: #c0c0c0 !important;
+    }
+    
+    section.cover blockquote p {
+      color: #d0d0d0 !important;
+    }
+    
+    section.cover ul li {
+      color: #d0d0d0 !important;
+    }
+    
+    section.cover .cover-main > p:last-child a {
+      color: #fff !important;
+      background-color: #e63946 !important;
+      border-color: #e63946 !important;
+      border-radius: 6px !important;
+      padding: 10px 24px !important;
+      font-weight: 700 !important;
+      transition: all 0.2s !important;
+    }
+    
+    section.cover .cover-main > p:last-child a:hover {
+      background-color: #ff5060 !important;
+      border-color: #ff5060 !important;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(230, 57, 70, 0.4);
+    }
+    
+    section.cover .cover-main > p:last-child a:last-child {
+      background-color: transparent !important;
+      border: 1px solid #e63946 !important;
+      color: #e63946 !important;
+    }
+    
+    section.cover .cover-main > p:last-child a:last-child:hover {
+      background-color: rgba(230, 57, 70, 0.1) !important;
+    }
+    
+    /* === BARRE DE RECHERCHE === */
+    .search input {
+      background: #151525 !important;
+      color: #ffffff !important;
+      border: 1px solid #444 !important;
+      border-radius: 6px !important;
+      padding: 8px 12px !important;
+    }
+    
+    .search input::placeholder {
+      color: #666 !important;
+    }
+    
+    .search input:focus {
+      border-color: #e63946 !important;
+      box-shadow: 0 0 8px rgba(230, 57, 70, 0.2) !important;
+    }
+    
+    .search .results-panel {
+      background: #151525 !important;
+      border: 1px solid #333 !important;
+    }
+    
+    .search .matching-post {
+      border-bottom: 1px solid #2a2a40 !important;
+    }
+    
+    .search .matching-post p {
+      color: #b0b0b0 !important;
+    }
+    
+    /* === BOUTON COPIER CODE === */
+    .docsify-copy-code-button {
+      background: #e63946 !important;
+      color: #fff !important;
+      font-weight: 600 !important;
+      border-radius: 4px !important;
+      font-size: 0.75rem !important;
+    }
+    
+    .docsify-copy-code-button:hover {
+      background: #ff5060 !important;
+    }
+    
+    /* === PAGINATION === */
+    .pagination-item {
+      border: 1px solid #333 !important;
+      border-radius: 8px !important;
+      background: #151525 !important;
+    }
+    
+    .pagination-item a {
+      color: #d0d0d0 !important;
+    }
+    
+    .pagination-item a:hover {
+      color: #e63946 !important;
+    }
+    
+    .pagination-item .pagination-item-title {
+      color: #ffffff !important;
+      font-weight: 700 !important;
+    }
+    
+    /* === SCROLLBAR === */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    
+    ::-webkit-scrollbar-track {
+      background: #0a0a0f;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background: #e63946;
+      border-radius: 3px;
+    }
+    
+    /* === RESPONSIVE === */
+    @media (max-width: 768px) {
+      .markdown-section {
+        padding: 15px !important;
+      }
+      
+      .markdown-section table {
+        font-size: 0.82rem !important;
+      }
+      
+      .markdown-section h1 {
+        font-size: 1.5rem !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="app">Chargement du portfolio...</div>
+  
+  <script>
+    window.$docsify = {
+      name: 'Portfolio Arthur',
+      repo: 'https://github.com/Arthur-Logeais/Arthur-Logeais.github.io',
+      loadSidebar: true,
+      loadNavbar: true,
+      coverpage: true,
+      auto2top: true,
+      maxLevel: 3,
+      subMaxLevel: 2,
+      
+      search: {
+        maxAge: 86400000,
+        paths: 'auto',
+        placeholder: 'Rechercher dans le portfolio...',
+        noData: 'Aucun résultat',
+        depth: 6
+      },
+      
+      copyCode: {
+        buttonText: 'Copier',
+        errorText: 'Erreur',
+        successText: 'Copié !'
+      },
+      
+      pagination: {
+        previousText: 'Précédent',
+        nextText: 'Suivant',
+        crossChapter: true
+      }
+    };
+  </script>
+  
+  <!-- Docsify core -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+  
+  <!-- Plugins -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  
+  <!-- Coloration syntaxique pour le code technique -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-powershell.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-sql.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-yaml.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-markup.min.js"></script>
+</body>
+</html>
