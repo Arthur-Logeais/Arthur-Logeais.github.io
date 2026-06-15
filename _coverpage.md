@@ -7,5 +7,5 @@
 - 📚 30+ chapitres de documentation technique
 - 🎯 Objectif : CPTS, OSCP+, CRTO, OSCE3, OSEE
 
-[Commencer la visite](#bienvenue-sur-mon-portfolio-bts-sio)
+[Commencer la visite](/)
 [GitHub](https://github.com/Arthur-Logeais)
