@@ -91,7 +91,7 @@ Mon parcours de certifications est structuré par **paliers de difficulté progr
 |-------|------|
 | 📧 **Email** | [arthurlogeais08@email.com](mailto:arthurlogeais08@email.com) |
 | 🐙 **GitHub** | [github.com/Arthur-Logeais](https://github.com/Arthur-Logeais) |
-| 💼 **LinkedIn** | [linkedin.com/in/arthur-logeais](https://linkedin.com) |
+| 💼 **LinkedIn** | [linkedin.com/in/arthur-logeais](https://www.linkedin.com/in/arthur-logeais-6408a1253/) |
 
 ---
 

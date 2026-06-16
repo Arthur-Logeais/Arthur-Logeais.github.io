@@ -29,13 +29,13 @@ Passionné par la **cybersécurité offensive**, je consacre une grande partie d
 ### Systèmes
 - Administration Linux (Debian, Ubuntu, Kali)
 - Administration Windows (10/11, Server 2019/2022)
-- Virtualisation (VMware, VirtualBox)
+- Virtualisation (VirtualBox)
 
 ### Réseaux
 - TCP/IP, modèle OSI
-- Configuration switchs et routeurs Cisco
+- Configuration switchs et routeurs 
 - VLAN, routage, pare-feu
-- VPN, DMZ
+
 
 ### Développement & Scripting
 - Python
@@ -83,7 +83,7 @@ Passionné par la **cybersécurité offensive**, je consacre une grande partie d
 
 > Environnement de laboratoire personnel pour pratiquer
 
-**Hyperviseur** : VMware Workstation / VirtualBox
+**Hyperviseur** : VirtualBox
 
 | Machine | OS | Rôle |
 |---------|------|------|
