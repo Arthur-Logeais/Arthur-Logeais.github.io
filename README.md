@@ -49,8 +49,8 @@ Ce portfolio présente l'ensemble de mon parcours, mes compétences et mes réal
 
 ### Systèmes & Réseaux
 - 🖥️ Administration Windows Server / Linux (Debian, Kali)
-- 🌐 Configuration réseau (TCP/IP, VLAN, routage Cisco)
-- 🔐 Pare-feu, VPN, sécurisation périmétrique
+- 🌐 Configuration réseau (TCP/IP, VLAN)
+- 🔐 Pare-feu, sécurisation périmétrique
 
 ### Développement & Scripting
 - 🐍 Python, Bash, PowerShell
